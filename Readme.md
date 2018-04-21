@@ -55,21 +55,26 @@ O DHT22 é um sensor de temperatura e umidade que usa comunicação One-Wire. Este 
 ### MQ135
 Este é o sensor de dióxido de carbono mais disponível no mercado.
 
-<img src="https://potentiallabs.com/cart/image/cache/catalog/New%20Components-17/Mq-135-800x800.jpg" width="200" />`
+<img src="https://potentiallabs.com/cart/image/cache/catalog/New%20Components-17/Mq-135-800x800.jpg" width="200" />
 
 ### Mini Ventilador
 Mini Ventiladores são o suficiente para promover o fluxo de ar interno e para promover a troca de ar.
-<img src="https://cdn.shopify.com/s/files/1/0447/3693/products/scythe-mini-kaze-ultra-40-x-20-mm-silent-mini-fan-sy124020l-4_800x.jpeg" width="200" />`
+
+<img src="https://cdn.shopify.com/s/files/1/0447/3693/products/scythe-mini-kaze-ultra-40-x-20-mm-silent-mini-fan-sy124020l-4_800x.jpeg" width="200" />
+
 ### Resistores de Potência
 Resistores de Potência aquecem quando uma corrente relativamente alta passa por eles. Fazendo um arranjo de resistores de potência podemos criar um aquecedor básico e simples.
+
 <img src="http://www.eletrodex.com.br/media/catalog/product/cache/1/image/800x/9df78eab33525d08d6e5fb8d27136e95/r/e/resistor_10w_2.jpg" width="200" />
 
 ### Umidificador Ultrassônico "Fogger"
 O Fogger é mergulhado na água e então ele cria uma névoa em sua superfície por meio de ondas ultrassônicas. Essa névoa pode ser utilizada para umidificar o ar.
+
 <img src="https://img1.wantitall.co.za/prodimages/new-ultrasonic-fogger-mist-maker-fog-water-fountain-pond-atomizer-air-humidifier__41G-NPwk1pL.jpg" width="200" />
 
 ### Led 460nm
 Led de freqência específica azul. Apenas essa faixa de freqência é necessária para o cultivo.
+
 <img src="https://www.digibay.in/image/cache/data/se/171-a-1w-high-power-white-led-80-lumen-3v-350ma-600x600.jpg" width="200" />
 
 ## Diagrama de Blocos
@@ -95,7 +100,7 @@ Com isso podemos obter a condutividade térmica da caixa de isopor, k = 0.001225.
 # Softwares
 ## Firmware do ESP8266
 
-``` Arduino
+```C++
 #include <ESP8266WiFi.h>
 #include <WiFiClient.h>
 #include <PubSubClient.h>
