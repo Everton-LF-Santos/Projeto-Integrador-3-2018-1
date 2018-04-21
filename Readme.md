@@ -3,7 +3,8 @@
 - [Introdução](#introdução)
 	- [O Cultivo de Cogumelos](#o-cultivo-de-cogumelos)
 	- [O Protocolo MQTT](#o-protocolo-mqtt)
- 
+ - [Sensoreamento](#sensoreamento)
+ - 
 # Motivação
 
 O intuito  é projetar e desenvolver uma estufa para cultuvo de cogumelos de modo descentralizado e utilizando o protocolo MQTT para comunicação via Wi-Fi.
@@ -29,13 +30,34 @@ O protocolo MQTT define dois tipos de entidades na rede: um message broker e inú
 
 # Sensoreamento
 ## Componentes
-- ESP8266
-- DHT22 (Sensor de temperatura e umidade)
-- MQ135 (Sensor de Gás Carbônico)
-- Mini Ventilador (Ventilação)
-- Resistores de Potência (Aquecimento)
-- Umidificador Ultrassônico "Fogger" (Umidificação)
-- Led 460nm (Iluminação)
+- **Micrcontrolador**: ESP8266
+- **Sensor de temperatura**: DHT22 
+- **Sensor de umidade**: DHT22 
+- **Sensor de Gás Carbônico**: MQ135
+- **Ventilação**: Mini Ventilador
+- **Aquecimento**: Resistores de Potência
+- **Umidificação**: Umidificador Ultrassônico "Fogger"
+- **Iluminação**: Led 460nm
+
+### ESP8266
+O ESP8266 é um microcontrolador de baixo custo da fabricante chinêsa Espressif que inclui capacidade de comunicação por Wi-Fi. É um microcontrolador de 32 bits e que possui uma grande variedade de módulos. O módulo empregado para esse projeto foi o Kit de Desenvolvimento Node-MCU.
+![nodemcu](https://cdn.shopify.com/s/files/1/0672/9409/products/NodeMCU_ESP8266_development_board_1024x1024.jpg?v=1464135546 =300x)
+
+### DHT22
+O DHT22 é um sensor de temperatura e umidade que usa comunicação One-Wire. Este sensor foi escolhido para o projeto por ter uma precisão maior nas regiôes de saturação da umidade.
+![dht](https://makertree.azurewebsites.net/168/18/dht22-digital-temperature-and-humidity-sensor-7036.jpg =200x)
+
+### MQ135
+Este é o sensor de dióxido de carbono mais disponível no mercado.
+![co2](https://potentiallabs.com/cart/image/cache/catalog/New%20Components-17/Mq-135-800x800.jpg =200x)
+### Mini Ventilador
+### Resistores de Potência
+![resistor](http://www.eletrodex.com.br/media/catalog/product/cache/1/image/800x/9df78eab33525d08d6e5fb8d27136e95/r/e/resistor_10w_2.jpg =200x)
+### Umidificador Ultrassônico "Fogger"
+![fogger](https://img1.wantitall.co.za/prodimages/new-ultrasonic-fogger-mist-maker-fog-water-fountain-pond-atomizer-air-humidifier__41G-NPwk1pL.jpg =200x)
+### Led 460nm
+![led](https://www.digibay.in/image/cache/data/se/171-a-1w-high-power-white-led-80-lumen-3v-350ma-600x600.jpg =200x)
+
 ## Diagrama de Blocos
 ![Diagrama de Blocos](https://github.com/Everton-LF-Santos/Projeto-Integrador-3-2018-1/blob/Estufa-para-Cogumelos/imgs/block_diagram.jpg)
 
@@ -51,7 +73,7 @@ A parte do sensoreamento é formada pelo ESP8266 como unidade central e este rece
 
 # Testes
 ## Caixa de isopor
-Foi feito um teste de resfriamento da caixa de isopor e numericamente encntrado a curva resultante do comportamento dos dados:
+Foi feito um teste de resfriamento da caixa de isopor e numericamente encontrado a curva resultante do comportamento dos dados:
 ![isopor](https://github.com/Everton-LF-Santos/Projeto-Integrador-3-2018-1/blob/Estufa-para-Cogumelos/imgs/temperature_curve_box_cooling.png)
 Podemos aproximar a função da temperatura pelo tempo por T(t)=28.3+18.15\*exp(-0.001225\*t).
 Com isso podemos obter a condutividade térmica da caixa de isopor, k = 0.001225.
@@ -59,3 +81,5 @@ Com isso podemos obter a condutividade térmica da caixa de isopor, k = 0.001225.
 # Softwares
 ## Firmware do ESP8266
 A placa 
+
+# Orçamentos
