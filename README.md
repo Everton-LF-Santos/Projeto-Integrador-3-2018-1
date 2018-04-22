@@ -15,8 +15,7 @@
 
 <p>Ao chegar na terminação nervosa responsável pelo controle de certa musculatura, chamada de axônio neuromotor alpha, o sinal sináptico comanda um outro fenômeno para iniciar a contração muscular, chamado de Potencial de Ação. Esse fenômeno altera o potencial elétrico da célula muscular por meio da alteração de concentração de íons nas regiões internas e externas à sua membrana, causando, assim, a contração muscular.</p>
 
-![Figura 1 - Representação química do potencial de ação](/Projeto-Integrador-3-2018-1/images/capturar5.jpg "Potencial de Ação")
-<img src="/Projeto-Integrador-3-2018-1/images/capturar5.jpg" alt="Figura 1 - Representação química do potencial de ação" title="Potencial de Ação"/>
+![Figura 1 - Representação química do potencial de ação](https://github.com/Everton-LF-Santos/Projeto-Integrador-3-2018-1/images/capturar5.jpg "Potencial de Ação")
 
 <p>Normal text</p>
 <p>Normal text</p>
