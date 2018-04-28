@@ -8,6 +8,11 @@
 ## Objetivo:
 Monitoramento do nível de água de uma caixa d'água e verificação de vazamentos de água em pontos estratégicos no campus através de comunicação WIFI.
 
+### MQTT
+O protocolo MQTT é ideal para IOT (Internet Of Things) e será usado neste projeto. Neste protocolo o trabalho fica a cargo de um Broker, no qual um "Publisher" pública dados em um tópico no Broker e os inscritos neste tópico recebem os dados.
+![alt text](https://www.cloudmqtt.com/images/publisher-subscriber.jpg "")
+![alt text](https://www.cloudmqtt.com/images/cloudmqtt_overview.png "")
+
 
 ### Componentes:
 #### Sensor de Nível:
@@ -28,3 +33,4 @@ Monitoramento do nível de água de uma caixa d'água e verificação de vazamen
 ### Testes de Estresse
 
 ### Referências
+1. https://www.cloudmqtt.com/docs.html
