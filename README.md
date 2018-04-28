@@ -23,3 +23,8 @@ Monitoramento do nível de água de uma caixa d'água e verificação de vazamen
 ##### Diagrama de Blocos:
 ![alt text](https://raw.githubusercontent.com/Eximmius/Projeto-Integrador-3-2018-1/master/Imagens/S_Fluxo.png "Diagrama Fluxo")
 
+### Limitações técnicas
+
+### Testes de Estresse
+
+### Referências
