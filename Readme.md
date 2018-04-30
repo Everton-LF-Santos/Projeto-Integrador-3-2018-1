@@ -1,9 +1,11 @@
+
 # Index
 - [Motivação](#motivação)
 - [Introdução](#introdução)
 	- [O Cultivo de Cogumelos](#o-cultivo-de-cogumelos)
 	- [O Protocolo MQTT](#o-protocolo-mqtt)
  - [Sensoreamento](#sensoreamento)
+ - 
  - 
  - [Testes](#testes)
  - [Softwares](#softwares)
@@ -84,10 +86,11 @@ A parte do sensoreamento é formada pelo ESP8266 como unidade central e este rece
 
 ## Atuadores
 
-### Circuito Atuador Geral
+### Esquemático Atuador Geral
 ![Diagrama de Blocos](https://github.com/Everton-LF-Santos/Projeto-Integrador-3-2018-1/blob/Estufa-para-Cogumelos/imgs/actuator_1.jpg)
 
-### Circuito Atuador do Aquecedor
+
+### Esquemático Atuador do Aquecedor
 ![Diagrama de Blocos](https://github.com/Everton-LF-Santos/Projeto-Integrador-3-2018-1/blob/Estufa-para-Cogumelos/imgs/actuator_2.jpg)
 
 # Testes
@@ -98,6 +101,9 @@ Podemos aproximar a função da temperatura pelo tempo por T(t)=28.3+18.15\*exp(-0
 Com isso podemos obter a condutividade térmica da caixa de isopor, k = 0.001225.
 
 # Softwares
+
+## Servidor MQTT
+
 ## Firmware do ESP8266
 
 ```C++
