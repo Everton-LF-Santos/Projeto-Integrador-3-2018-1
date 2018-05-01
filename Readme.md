@@ -319,6 +319,7 @@ void callback(char* topic, byte* payload, unsigned int length) {
 
 # Orçamentos
 A tabela de preços contem valores aproximados:
+
 |Item					|Preço	|
 |-----------------------|------:|
 |ESP8266				| 43 R$	|
