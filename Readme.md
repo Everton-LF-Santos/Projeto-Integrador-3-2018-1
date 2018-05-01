@@ -5,11 +5,15 @@
 	- [O Cultivo de Cogumelos](#o-cultivo-de-cogumelos)
 	- [O Protocolo MQTT](#o-protocolo-mqtt)
  - [Sensoreamento](#sensoreamento)
- - 
- - 
+	 - [Componentes](#componentes)
+	 - [Diagrama de Blocos](#diagrama-de-blocos)
+	 - [Atuadores](#atuadores)
  - [Testes](#testes)
  - [Softwares](#softwares)
 	 - [Firmware do ESP8266](#firmware-do-esp8266)
+- [Orçamentos](#orçamentos)
+- [Montagem](#montagem)
+
 # Motivação
 
 O intuito  é projetar e desenvolver uma estufa para cultuvo de cogumelos de modo descentralizado e utilizando o protocolo MQTT para comunicação via Wi-Fi.
@@ -18,6 +22,24 @@ Inicialmente será feito um protótipo de um modelo menor e será deixado como uma 
 # Introdução
 
 ## O Cultivo de Cogumelos
+Hoje em dia está tendo uma demanda crescente para o consumo de cogumelos, seja ela devido ao seu delicioso sabor, ao uso nos pratos de origem Orientais, ou ao veganismo, na qual não se consomem produtos de origem animal.
+O cultivo de cogumelo é tido como um taboo para as pessoas. Isso pode ser devido à diferença dos cogumelos com os alimentos que encontramos no dia a dia. Um cogumelo não é uma planta e nem um animal, ele é algo próprio, um fungo. Um fungo quase sempre é levado para uma conotação ruim, como o mofo ou bolor. Porém, alguns desses fungos são saborosos e nutritivos e infelizmente são pouco comercializados.
+
+
+
+### Estágios de Cultivo
+
+### Cogumelos Mais Comuns
+- Cogumelo Paris ou Champignon:
+<img src="https://cdn.awsli.com.br/1000x1000/334/334766/produto/18044212/17f8c200a1.jpg" width="300" />
+- Shimeji: 
+<img src="https://http2.mlstatic.com/cogumelo-shimeji-branco-fresco-r-3000-o-kilo-D_NQ_NP_835450-MLB26598211450_012018-F.webp" width="300" />
+- Shitake:
+<img src="http://www.casacamponesa.com.br/sites/default/files/produtos/cogumelo-shitake.jpg" width="300" />
+- Cogumelo Salmão ou Shimeji Rosa:
+<img src="http://www.casacamponesa.com.br/sites/default/files/produtos/cogumelo-salmao.jpg" width="300" />
+- Portobello:
+<img src="https://vegifruti.com.br/media/catalog/product/cache/12/image/9df78eab33525d08d6e5fb8d27136e95/p/o/portobello.jpg" width="300" />
 
 ## O Protocolo MQTT
 **MQTT**, acrônimo de Message Queuing Telemetry Transport (anteriormente conhecido como _MQ Telemetry Transport_), é um protocolo de mensagens leve para sensores e pequenos dispositivos móveis otimizado para redes TCP/IP não confiáveis ou de alta latência. O esquema de troca de mensagens é fundamentado no modelo de publicação e assinatura.
@@ -80,25 +102,27 @@ Led de freqência específica azul. Apenas essa faixa de freqência é necessária pa
 <img src="https://www.digibay.in/image/cache/data/se/171-a-1w-high-power-white-led-80-lumen-3v-350ma-600x600.jpg" width="200" />
 
 ## Diagrama de Blocos
-![Diagrama de Blocos](https://github.com/Everton-LF-Santos/Projeto-Integrador-3-2018-1/blob/Estufa-para-Cogumelos/imgs/block_diagram.jpg)
+![Diagrama de Blocos](https://raw.githubusercontent.com/Everton-LF-Santos/Projeto-Integrador-3-2018-1/Estufa-para-Cogumelos/imgs/block_diagram.jpg)
 
 A parte do sensoreamento é formada pelo ESP8266 como unidade central e este recebe os sinais dos sensores e manda sinal para os atuadores.
 
 ## Atuadores
 
 ### Esquemático Atuador Geral
-![Diagrama de Blocos](https://github.com/Everton-LF-Santos/Projeto-Integrador-3-2018-1/blob/Estufa-para-Cogumelos/imgs/actuator_1.jpg)
+![Diagrama de Blocos](https://raw.githubusercontent.com/Everton-LF-Santos/Projeto-Integrador-3-2018-1/Estufa-para-Cogumelos/imgs/actuator_1.jpg)
 
 
 ### Esquemático Atuador do Aquecedor
-![Diagrama de Blocos](https://github.com/Everton-LF-Santos/Projeto-Integrador-3-2018-1/blob/Estufa-para-Cogumelos/imgs/actuator_2.jpg)
+![Diagrama de Blocos](https://raw.githubusercontent.com/Everton-LF-Santos/Projeto-Integrador-3-2018-1/Estufa-para-Cogumelos/imgs/actuator_2.jpg)
 
 # Testes
 ## Caixa de isopor
 Foi feito um teste de resfriamento da caixa de isopor e numericamente encontrado a curva resultante do comportamento dos dados:
-![isopor](https://github.com/Everton-LF-Santos/Projeto-Integrador-3-2018-1/blob/Estufa-para-Cogumelos/imgs/temperature_curve_box_cooling.png)
+![isopor](https://raw.githubusercontent.com/Everton-LF-Santos/Projeto-Integrador-3-2018-1/Estufa-para-Cogumelos/imgs/temperature_curve_box_cooling.png)
 Podemos aproximar a função da temperatura pelo tempo por T(t)=28.3+18.15\*exp(-0.001225\*t).
 Com isso podemos obter a condutividade térmica da caixa de isopor, k = 0.001225.
+
+## Caixa de Plástico
 
 # Softwares
 
@@ -294,3 +318,17 @@ void callback(char* topic, byte* payload, unsigned int length) {
 ```
 
 # Orçamentos
+A tabela de preços contem valores aproximados:
+|Item					|Preço	|
+|-----------------------|------:|
+|ESP8266				| 43 R$	|
+|DHT22					| 35 R$	|
+|MQ135					| 20 R$	|
+|Mini Ventilador		| 6 R$	|
+|Resistor de Potência	| 3 R$	|
+|Fogger					| 20 R$	|
+|Led 460nm				| 2 R$	|
+|Caixa de Isopor 100L	|100 R$	|
+
+
+# Montagem
