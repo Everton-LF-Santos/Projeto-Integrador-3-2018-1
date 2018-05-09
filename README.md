@@ -12,4 +12,4 @@ Repositório de arquivos para o PI3 - IFSC Campus Florianópolis
 
 <img src=https://upload.wikimedia.org/wikipedia/commons/4/4b/Flow_bench_schematic.GIF width="600" />
 
-<img src=http://prntscr.com/jfv925 width="600" />
+<img src= width="600" />
