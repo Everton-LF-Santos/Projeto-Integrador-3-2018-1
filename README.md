@@ -12,14 +12,4 @@ Repositório de arquivos para o PI3 - IFSC Campus Florianópolis
 
 <img src=https://upload.wikimedia.org/wikipedia/commons/4/4b/Flow_bench_schematic.GIF width="600" />
 
-```mermaid
-graph LR
-A[Square Rect] -- Link text --> B((Circle))
-A --> C(Round Rect)
-B --> D{Rhombus}
-C --> D
-C --> A
-C --> T
-T[asdasdad]
-T --> B
-```
+<img src=http://prntscr.com/jfv925 width="600" />
