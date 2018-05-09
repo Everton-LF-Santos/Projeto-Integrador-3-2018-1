@@ -10,4 +10,4 @@ Repositório de arquivos para o PI3 - IFSC Campus Florianópolis
 # A bancada de fluxo
 -> A bancada de fluxo
 
-<img src=https://upload.wikimedia.org/wikipedia/commons/4/4b/Flow_bench_schematic.GIF width="300" />
+<img src=https://upload.wikimedia.org/wikipedia/commons/4/4b/Flow_bench_schematic.GIF width="600" />
