@@ -25,7 +25,7 @@ Acredita-se frequentemente que as bancadas de fluxo são usadas apenas para test
 ![diagrama de blocos](https://github.com/Everton-LF-Santos/Projeto-Integrador-3-2018-1/blob/Bancada-de-Fluxo/Imagens/diagrama%20de%20blocos%20do%20sistema.png)
 
 
-referências:
-http://dtec.net.au/Flowbench%20Design%20Guide.htm   [1]
-http://www.flowperformance.com/flowbench.html       [2]
-http://www.flowperformance.com/faq.html#bookmark3   [3]
+referências:  
+http://dtec.net.au/Flowbench%20Design%20Guide.htm   [1]  
+http://www.flowperformance.com/flowbench.html       [2]  
+http://www.flowperformance.com/faq.html#bookmark3   [3]  
