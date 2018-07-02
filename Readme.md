@@ -1,4 +1,5 @@
 
+
 # Index
 - [Motivação](#motivação)
 - [Introdução](#introdução)
@@ -7,12 +8,14 @@
  - [Sensoreamento](#sensoreamento)
 	 - [Componentes](#componentes)
 	 - [Diagrama de Blocos](#diagrama-de-blocos)
-	 - [Atuadores](#atuadores)
+	 - [Placa de Circuito Impresso](#placa-de-circuito-impresso)
  - [Testes](#testes)
  - [Softwares](#softwares)
+	 -  [Servidor MQTT](#servidor-mqtt)
 	 - [Firmware do ESP8266](#firmware-do-esp8266)
 - [Orçamentos](#orçamentos)
 - [Montagem](#montagem)
+- 
 
 # Motivação
 
@@ -39,7 +42,7 @@ O cultivo de cogumelo é tido como um taboo para as pessoas. Isso pode ser devido
 - Cogumelo Salmão ou Shimeji Rosa:
 <img src="http://www.casacamponesa.com.br/sites/default/files/produtos/cogumelo-salmao.jpg" width="300" />
 - Portobello:
-<img src="https://vegifruti.com.br/media/catalog/product/cache/12/image/9df78eab33525d08d6e5fb8d27136e95/p/o/portobello.jpg" width="300" />
+<img src="https://static.wixstatic.com/media/9a994c_a21487f1a5af481b80e415b6e3e3525d~mv2.jpg/v1/fill/w_494,h_299,al_c,q_90/9a994c_a21487f1a5af481b80e415b6e3e3525d~mv2.webp" width="300" />
 
 ## O Protocolo MQTT
 **MQTT**, acrônimo de Message Queuing Telemetry Transport (anteriormente conhecido como _MQ Telemetry Transport_), é um protocolo de mensagens leve para sensores e pequenos dispositivos móveis otimizado para redes TCP/IP não confiáveis ou de alta latência. O esquema de troca de mensagens é fundamentado no modelo de publicação e assinatura.
@@ -60,11 +63,9 @@ O protocolo MQTT define dois tipos de entidades na rede: um message broker e inú
 - **Micrcontrolador**: ESP8266
 - **Sensor de temperatura**: DHT22 
 - **Sensor de umidade**: DHT22 
-- **Sensor de Gás Carbônico**: MQ135
 - **Ventilação**: Mini Ventilador
-- **Aquecimento**: Resistores de Potência
+- **Aquecimento**: Aquecedor de Aquário
 - **Umidificação**: Umidificador Ultrassônico "Fogger"
-- **Iluminação**: Led 460nm
 
 ### ESP8266
 O ESP8266 é um microcontrolador de baixo custo da fabricante chinêsa Espressif que inclui capacidade de comunicação por Wi-Fi. É um microcontrolador de 32 bits e que possui uma grande variedade de módulos. O módulo empregado para esse projeto foi o Kit de Desenvolvimento Node-MCU.
@@ -72,48 +73,40 @@ O ESP8266 é um microcontrolador de baixo custo da fabricante chinêsa Espressif q
 <img src="https://cdn.shopify.com/s/files/1/0672/9409/products/NodeMCU_ESP8266_development_board_1024x1024.jpg" width="200" />
 
 ### DHT22
-O DHT22 é um sensor de temperatura e umidade que usa comunicação One-Wire. Este sensor foi escolhido para o projeto por ter uma precisão maior nas regiôes de saturação da umidade.
+O DHT22 é um sensor de temperatura e umidade que usa comunicação One-Wire. Este sensor foi escolhido para o projeto por ser o sensor mais disponível no mercado brasileiro.
 
-<img src="https://makertree.azurewebsites.net/168/18/dht22-digital-temperature-and-humidity-sensor-7036.jpg" width="200" />
+<img src="https://uploads.filipeflop.com/2017/07/SKU031549-.2-600x600.jpg" width="200" />
 
-### MQ135
-Este é o sensor de dióxido de carbono mais disponível no mercado.
-
-<img src="https://potentiallabs.com/cart/image/cache/catalog/New%20Components-17/Mq-135-800x800.jpg" width="200" />
 
 ### Mini Ventilador
 Mini Ventiladores são o suficiente para promover o fluxo de ar interno e para promover a troca de ar.
 
 <img src="https://cdn.shopify.com/s/files/1/0447/3693/products/scythe-mini-kaze-ultra-40-x-20-mm-silent-mini-fan-sy124020l-4_800x.jpeg" width="200" />
 
-### Resistores de Potência
-Resistores de Potência aquecem quando uma corrente relativamente alta passa por eles. Fazendo um arranjo de resistores de potência podemos criar um aquecedor básico e simples.
+### Aquecedor de Aquário
+Usar um aquecedor de aquário dentro de um recipiente com água é um método simples, prático, barato e replicável para se aquecer um ambiente.
 
-<img src="http://www.eletrodex.com.br/media/catalog/product/cache/1/image/800x/9df78eab33525d08d6e5fb8d27136e95/r/e/resistor_10w_2.jpg" width="200" />
+<img src="https://http2.mlstatic.com/aquecedor-para-aquarios-sarlo-better-hot-25w-220v-D_NQ_NP_994011-MLB20453932090_102015-F.jpg" width="200" />
 
 ### Umidificador Ultrassônico "Fogger"
 O Fogger é mergulhado na água e então ele cria uma névoa em sua superfície por meio de ondas ultrassônicas. Essa névoa pode ser utilizada para umidificar o ar.
 
 <img src="https://img1.wantitall.co.za/prodimages/new-ultrasonic-fogger-mist-maker-fog-water-fountain-pond-atomizer-air-humidifier__41G-NPwk1pL.jpg" width="200" />
 
-### Led 460nm
-Led de freqência específica azul. Apenas essa faixa de freqência é necessária para o cultivo.
-
-<img src="https://www.digibay.in/image/cache/data/se/171-a-1w-high-power-white-led-80-lumen-3v-350ma-600x600.jpg" width="200" />
 
 ## Diagrama de Blocos
 ![Diagrama de Blocos](https://raw.githubusercontent.com/Everton-LF-Santos/Projeto-Integrador-3-2018-1/Estufa-para-Cogumelos/imgs/block_diagram.jpg)
 
 A parte do sensoreamento é formada pelo ESP8266 como unidade central e este recebe os sinais dos sensores e manda sinal para os atuadores.
 
-## Atuadores
+## Placa de Circuito Impresso
+A placa de circuito impresso foi feita no software Altium.
+### Esquemático
+![Diagrama de Blocos](https://raw.githubusercontent.com/Everton-LF-Santos/Projeto-Integrador-3-2018-1/Estufa-para-Cogumelos/imgs/schematic.jpg)
 
-### Esquemático Atuador Geral
-![Diagrama de Blocos](https://raw.githubusercontent.com/Everton-LF-Santos/Projeto-Integrador-3-2018-1/Estufa-para-Cogumelos/imgs/actuator_1.jpg)
 
-
-### Esquemático Atuador do Aquecedor
-![Diagrama de Blocos](https://raw.githubusercontent.com/Everton-LF-Santos/Projeto-Integrador-3-2018-1/Estufa-para-Cogumelos/imgs/actuator_2.jpg)
+### PCB
+![Diagrama de Blocos](https://raw.githubusercontent.com/Everton-LF-Santos/Projeto-Integrador-3-2018-1/Estufa-para-Cogumelos/imgs/pcb.jpg)
 
 # Testes
 ## Caixa de isopor
@@ -122,214 +115,65 @@ Foi feito um teste de resfriamento da caixa de isopor e numericamente encontrado
 Podemos aproximar a função da temperatura pelo tempo por T(t)=28.3+18.15\*exp(-0.001225\*t).
 Com isso podemos obter a condutividade térmica da caixa de isopor, k = 0.001225.
 
-## Caixa de Plástico
+
 
 # Softwares
 
 ## Servidor MQTT
+Foi utilizado o servidor test.mosquitto.org como servidor MQTT. Este servidor é de livre uso utilizando a porta 1883.
 
 ## Firmware do ESP8266
 
-```C++
-#include <ESP8266WiFi.h>
-#include <WiFiClient.h>
-#include <PubSubClient.h>
-#include <DHT.h>
-
-const char* SSID = "batata"; //Seu SSID da Rede WIFI
-const char* PASSWORD = "12344321"; // A Senha da Rede WIFI
-const char* USER = "rtsukiae";
-const char* USER_PASSWORD = "tJ57VNAJ_U9t";
-const char* MQTT_SERVER = "m10.cloudmqtt.com";
-int         PORT = 18650;
-
-
-#define GPIO_PIN_HEATER     5
-#define GPIO_PIN_HUMIDIFIER 4
-#define GPIO_PIN_FAN1       14
-#define GPIO_PIN_LIGHT      12
-
-
-#define DHTPIN 2
-#define DHTTYPE DHT22
-#define REPORT_INTERVAL 30 // in sec
-
-DHT dht(DHTPIN, DHTTYPE);
-
-char espID[6];
-long lastMsg = 0;
-char msg[50];
-char msg_buff[50];
-WiFiClient CLIENT;
-PubSubClient MQTT(CLIENT);
-
-
-//CONFIGURAÇÃO DA INTERFACE DE REDE
-void setupWIFI() {
-  WiFi.begin(SSID, PASSWORD);
-  Serial.print("Conectando na rede: ");
-  Serial.println(SSID);
-  while (WiFi.status() != WL_CONNECTED) {
-    Serial.print(".");
-    delay(500);
-  }
-  Serial.println("WiFi connected");
-}
-
-void setup(void) {
-  Serial.begin(115200);
-
-  uint8_t temp[6];
-  setupWIFI();
-  WiFi.macAddress(temp);
-  sprintf(espID, "%X%X%X", temp[3], temp[4], temp[5]);
-  Serial.println(espID);
-
-  MQTT.setServer(MQTT_SERVER, PORT);
-  MQTT.setCallback(callback);
-
-
-  setupPin();
-
-  dht.begin();
-}
-
-void loop(void) {
-  if (!MQTT.connected()) {
-    reconectar();
-  }
-  MQTT.loop();
-
-  delay(1000);
-
-  float h = dht.readHumidity();
-  float t = dht.readTemperature();
-
-  char topic[20];
-  sprintf(msg, "%.1f", t);
-  sprintf(topic, "%s/temperature", espID);
-  MQTT.publish(topic, msg);
-
-  sprintf(msg, "%.1f", h);
-  sprintf(topic, "%s/humidity", espID);
-  MQTT.publish(topic, msg);
-
-  Serial.print("H: ");
-  Serial.print(h);
-  Serial.print(" %\t");
-  Serial.print("T: ");
-  Serial.println(t);
-
-}
-
-void reconectar() {
-  while (!MQTT.connected()) {
-    Serial.println("Conectando ao Broker MQTT.");
-    if (MQTT.connect("ESP8266", USER, USER_PASSWORD)) {
-      Serial.println("Conectado com Sucesso ao Broker");
-
-      char topic_buff[20];
-      sprintf(topic_buff, "%s/light", espID);
-      MQTT.subscribe(topic_buff, 1);
-      Serial.print("Subscribed to ");
-      Serial.println(topic_buff);
-
-    } else {
-      Serial.print("Falha ao Conectador, rc=");
-      Serial.print(MQTT.state());
-      Serial.println(" tentando se reconectar...");
-      delay(3000);
-    }
-  }
-}
-
-void setupPin() {
-  pinMode(4, OUTPUT);
-  digitalWrite(4, HIGH);
-}
-
-void callback(char* topic, byte* payload, unsigned int length) {
-
-  for (int i = 0; i < length; i++)
-    msg_buff[i] = payload[i];
-
-  Serial.println("Received:");
-  Serial.print("topic: ");
-  Serial.println(topic);
-  Serial.print("payload: ");
-  Serial.println(msg_buff);
-
-  char topic_buff[20];
-
-  sprintf(topic_buff, "%s/heater", espID);
-  if (strcmp(topic, topic_buff) == 0)
-  {
-    if (strcmp(msg_buff, "1") == 0)
-    {
-      digitalWrite(GPIO_PIN_HEATER, HIGH);
-    }
-    else
-    {
-      digitalWrite(GPIO_PIN_HEATER, LOW);
-    }
-  }
-
-  sprintf(topic_buff, "%s/humidifier", espID);
-  if (strcmp(topic, topic_buff) == 0)
-  {
-    if (strcmp(msg_buff, "1") == 0)
-    {
-      digitalWrite(GPIO_PIN_HUMIDIFIER, HIGH);
-    }
-    else
-    {
-      digitalWrite(GPIO_PIN_HUMIDIFIER, LOW);
-    }
-  }
-
-  sprintf(topic_buff, "%s/fan1", espID);
-  if (strcmp(topic, topic_buff) == 0)
-  {
-    if (strcmp(msg_buff, "1") == 0)
-    {
-      digitalWrite(GPIO_PIN_FAN1, HIGH);
-    }
-    else
-    {
-      digitalWrite(GPIO_PIN_FAN1, LOW);
-    }
-  }
-  
-  sprintf(topic_buff, "%s/light", espID);
-  if (strcmp(topic, topic_buff) == 0)
-  {
-    if (strcmp(msg_buff, "1") == 0)
-    {
-      digitalWrite(GPIO_PIN_LIGHT, HIGH);
-    }
-    else
-    {
-      digitalWrite(GPIO_PIN_LIGHT, LOW);
-    }
-  }
-
-}
-
-```
+O Firmware do ESP8266 foi feito utilizando a framework do Arduino.
 
 # Orçamentos
 A tabela de preços contem valores aproximados:
 
-|Item					|Preço	|
-|-----------------------|------:|
-|ESP8266				| 43 R$	|
-|DHT22					| 35 R$	|
-|MQ135					| 20 R$	|
-|Mini Ventilador		| 6 R$	|
-|Resistor de Potência	| 3 R$	|
-|Fogger					| 20 R$	|
-|Led 460nm				| 2 R$	|
-|Caixa de Isopor 100L	|100 R$	|
+|Item						|Preço	|
+|---------------------------|------:|
+|ESP8266					| 25 R$	|
+|DHT22						| 35 R$	|
+|Mini Ventilador			| 6 R$	|
+|Aquecedor de Aquário 50W	| 30 R$	|
+|Fogger						| 20 R$	|
+|Caixa de Isopor 30L		| 30 R$	|
+|**Total**					| 146 R$	|
 
 
 # Montagem
+
+# Manual de Uso
+O ESP8266 se increverá no tópico "/set/" do seu ID. Cada ESP8266 tem um ID, que será designado ESPID. 
+
+Para iniciar, deve-se mandar "1" para o tópico:
+```
+ESPID/set/state
+```
+Para ajustar a temperatura, deve-se mandar o valor desejado para:
+```
+ESPID/set/temperature
+```
+Para ajustar a umidade, deve-se mandar o valor desejado para:
+```
+ESPID/set/humidity
+```
+Para ajustar o tempo em que o Umidificador permanece ativo temporariamente, deve-se mandar o valor desejado, em segundos, para:
+```
+ESPID/set/humifer/activetime
+```
+Para ajustar o periodo em que o Umidificador será ligado, deve-se mandar o valor desejado, em minutos, para:
+```
+ESPID/set/humifer/period
+```
+\
+\
+O ESP8266 mandará informações nos seguintes tópicos:
+```
+ESPID/status/temperature
+ESPID/status/humidity
+ESPID/status/elapsed
+ESPID/status/heater
+ESPID/status/humidifier
+ESPID/status/fan1
+ESPID/status/fan2
+```
