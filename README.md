@@ -2,7 +2,7 @@
 ## IFSC Campus Florianópolis
 ### Projeto-Integrador-3-2018-1
 
-#### Alunos: Jhonatan Lang, Ian Dannapel
+#### Equipe: Jhonatan Lang, Ian Dannapel
 
 
 ## Objetivo:
@@ -15,20 +15,24 @@ O protocolo MQTT é ideal para IOT (Internet Of Things) e será usado neste proj
 
 Afim de facilitar a visualização dos dados, optou-se por usar a plataforma IOT ThingsBoard. Na plataforma é possível criar gráficos que mostram os dados em tempo real e designar a um cliente. Para testes, usou-se a versão Demo Online.
 
-Para receber os dados, é necessário criar um dispositivo e conectar com seu token, que é basicamente o broker nessa aplicação. A partir dos dados recebidos neste dispositivo, pode-se criar um gráfico que estará inscrito no tópico do dado.
+Para receber os dados, é necessário criar um dispositivo e conectar com seu token, que é basicamente o broker nessa aplicação. A partir dos dados recebidos neste dispositivo, pode-se criar um gráfico que estará inscrito no tópico do dado:
+![Flow_Teste.PNG](https://github.com/Everton-LF-Santos/Projeto-Integrador-3-2018-1/blob/Uso-Sustent%C3%A1vel-%C3%81gua/Flow_Teste.PNG?raw=true)
 
-
-### Componentes:
+### Componentes Principais:
 1. NodeMCU V1.0 (ESP8266)
 2. Sensor Ultrassônico HCSR-04
-3. Sensor De Fluxo Efeito Hall
-O protótipo foi desenvolvido de maneira que o sensor de altura e sensor de fluxo possam ser utilizados individualmente ou ao mesmo tempo. Como os gráficos são individualizados, a visualização também sera individual.
+3. Sensor De Fluxo
 
-### Limitações técnicas
+O protótipo foi desenvolvido de maneira que o sensor de altura e sensor de fluxo possam ser utilizados individualmente ou ao mesmo tempo. Como os gráficos são individualizados, a visualização também será individual.
 
-### Testes de Estresse
+#### NodeMCU
+É um kit de desenvolvimento que combina o chip ESP8266, interface USB  e regulador de tensão. Além de ser responsável por todo processamento e leitura dos sensores, conecta ao WIFI para enviar os dados via MQTT. A programação pode ser feita pela interface do Arduino®, oferecendo bastante agilidade e praticidade, além das bibliotecas já implementadas.
+
+#### Sensor Ultrassônico
+Este componente mede a distância emitindo ondas ultrassônicas e aguardando o eco. A distância será proporcional ao tempo de demora entre a onda emitida e recebida.
 
 ### Resultados
+#### Limitações técnicas
 
 ### Documentação
 #### MQTT
