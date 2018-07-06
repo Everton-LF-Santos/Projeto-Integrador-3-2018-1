@@ -23,10 +23,13 @@ Para receber os dados, é necessário criar um dispositivo e conectar com seu to
 2. Sensor Ultrassônico HCSR-04
 3. Sensor De Fluxo
 
-O protótipo foi desenvolvido de maneira que o sensor de altura e sensor de fluxo possam ser utilizados individualmente ou ao mesmo tempo. Como os gráficos são individualizados, a visualização também será individual.
+O protótipo foi desenvolvido de maneira que o sensor de altura e sensor de fluxo possam ser utilizados individualmente ou ao mesmo tempo. Como os gráficos são individualizados, a visualização de dados também será individual.
 
 #### NodeMCU
 É um kit de desenvolvimento que combina o chip ESP8266, interface USB  e regulador de tensão. Além de ser responsável por todo processamento e leitura dos sensores, conecta ao WIFI para enviar os dados via MQTT. A programação pode ser feita pela interface do Arduino®, oferecendo bastante agilidade e praticidade, além das bibliotecas já implementadas.
+
+![alt text](https://github.com/Everton-LF-Santos/Projeto-Integrador-3-2018-1/blob/Uso-Sustent%C3%A1vel-%C3%81gua/Imagens/Node.png?raw=true =200x200 "NodeMCU")
+
 
 #### Sensor Ultrassônico
 Este componente mede a distância emitindo ondas ultrassônicas e aguardando o eco. A distância será proporcional ao tempo de demora entre a onda emitida e recebida.
@@ -34,9 +37,9 @@ Este componente mede a distância emitindo ondas ultrassônicas e aguardando o e
 ### Resultados
 #### Limitações técnicas
 
-### Documentação
+### Documentação Auxiliar
 #### MQTT
 1. https://www.cloudmqtt.com/docs.html
 2. https://thingsboard.io/docs/
 #### Sensor de Fluxo
-//http://wiki.seeedstudio.com/G1_and_2_inch_Water_Flow_Sensor/
+http://wiki.seeedstudio.com/G1_and_2_inch_Water_Flow_Sensor/
