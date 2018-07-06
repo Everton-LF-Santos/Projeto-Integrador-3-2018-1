@@ -25,12 +25,15 @@ Na imagem abaixo é possível ver a topologia dos filtros com os valores calculado
 
 ![alt text](https://github.com/Everton-LF-Santos/Projeto-Integrador-3-2018-1/blob/Eletrocardiografia-ECG/im5.png)
 
-
-
-
-Filtro 
+Ao ser implementado o fitro apresentou o comportamento da imagem a seguir.
 
 ![alt text](https://github.com/Everton-LF-Santos/Projeto-Integrador-3-2018-1/blob/Eletrocardiografia-ECG/Magnitude_log_Filtro.png)
+ 
+Após a impementação do filtro foi feito o circuito amplificador com acionamento na perna direita com o aplificador de instrumentação INA118, o circuito utilizado é o mesmo que esta disponibilizado no datashet do INA118.
+
+![alt text] (https://github.com/Everton-LF-Santos/Projeto-Integrador-3-2018-1/blob/Eletrocardiografia-ECG/circuito_ina.gif)
+
+
 
 Referências
 TOMPKINS, W. J. Biomedical Digital Signal Processing. Upper Saddle River, New Jersey: Prentice Hall, 1995.
