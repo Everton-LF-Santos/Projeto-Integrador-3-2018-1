@@ -1,3 +1,4 @@
+# Writing all output to: C:\Users\Maria Negri\Desktop\Projeto-Integrador-3-2018-1\Proteus\amplificadorPI3.log
 set pad_wire_necking on
 bus diagonal
 fanout 5
@@ -6,5 +7,5 @@ clean 2
 route 50 16
 clean 2
 filter 5
-recorner diagonal
 status_file
+
