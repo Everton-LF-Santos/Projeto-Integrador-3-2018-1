@@ -15,8 +15,24 @@ Para a implementação desses foi utilizado dois filtro Butterwoth ordem dois de  
 
 ![alt text](https://github.com/Everton-LF-Santos/Projeto-Integrador-3-2018-1/blob/Eletrocardiografia-ECG/im2.png)
 
+Para o calculo desses arbitrou-se o valor de capacitância para o filtro passa baixas e passa altas, C= 1,6 uF e C = 33 nF, respectivamente, e adquiriu-se os coeficientes 'a' e 'b' da tabela de filtros butterworth. Obtendo os seguintes resultados:
+
+![alt text](https://github.com/Everton-LF-Santos/Projeto-Integrador-3-2018-1/blob/Eletrocardiografia-ECG/im3.png)
+
+Na imagem abaixo é possível ver a topologia dos filtros com os valores calculados e em seguida para verificar o funcionamento do filtro antes do mesmo ser implementado na prática, foi traçada a curva de ganho pela frequência, como pode-se observar na imagem,  a banda passante dos filtros em questão vai de mais ou menos 250mHz a 50Hz.  
+
+![alt text](https://github.com/Everton-LF-Santos/Projeto-Integrador-3-2018-1/blob/Eletrocardiografia-ECG/im4.png)
+
+![alt text](https://github.com/Everton-LF-Santos/Projeto-Integrador-3-2018-1/blob/Eletrocardiografia-ECG/im5.png)
+
+
+
+
 Filtro 
 
 ![alt text](https://github.com/Everton-LF-Santos/Projeto-Integrador-3-2018-1/blob/Eletrocardiografia-ECG/Magnitude_log_Filtro.png)
+
+Referências
+TOMPKINS, W. J. Biomedical Digital Signal Processing. Upper Saddle River, New Jersey: Prentice Hall, 1995.
 
 Por: Bruna Martini e Maria Negri
