@@ -31,7 +31,7 @@ Ao ser implementado o fitro apresentou o comportamento da imagem a seguir.
  
 Após a impementação do filtro foi feito o circuito amplificador com acionamento na perna direita com o aplificador de instrumentação INA118, o circuito utilizado é o mesmo que esta disponibilizado no datashet do INA118.
 
-![alt text] (https://github.com/Everton-LF-Santos/Projeto-Integrador-3-2018-1/blob/Eletrocardiografia-ECG/circuito_ina.gif)
+![alt text] (https://github.com/Everton-LF-Santos/Projeto-Integrador-3-2018-1/blob/Eletrocardiografia-ECG/circuito_ina.jpg)
 
 
 
