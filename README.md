@@ -29,10 +29,15 @@ Ao ser implementado o fitro apresentou o comportamento da imagem a seguir.
 
 ![alt text](https://github.com/Everton-LF-Santos/Projeto-Integrador-3-2018-1/blob/Eletrocardiografia-ECG/Magnitude_log_Filtro.png)
  
-Após a impementação do filtro foi feito o circuito amplificador com acionamento na perna direita com o aplificador de instrumentação INA118, o circuito utilizado é o mesmo que esta disponibilizado no datashet do INA118.
+Após a impementação do filtro foi feito o circuito amplificador com acionamento na perna direita, o circuito utilizado é o mesmo que esta disponibilizado no datashet do INA118, amplificador de instrumentação.
 
 ![alt text](https://github.com/Everton-LF-Santos/Projeto-Integrador-3-2018-1/blob/Eletrocardiografia-ECG/circuito_ina.jpg)
 
+COMENTAR
+
+![alt text](https://github.com/Everton-LF-Santos/Projeto-Integrador-3-2018-1/blob/Eletrocardiografia-ECG/Screenshot.png)
+![alt text](https://github.com/Everton-LF-Santos/Projeto-Integrador-3-2018-1/blob/Eletrocardiografia-ECG/pi3.png)
+![alt text](https://github.com/Everton-LF-Santos/Projeto-Integrador-3-2018-1/blob/Eletrocardiografia-ECG/pi3_2.png)
 
 
 Referências
