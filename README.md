@@ -1,10 +1,12 @@
-Projeto Integrador 3 | Eletrocardiógrafo
+**Projeto Integrador 3 | Eletrocardiógrafo**
 
-Introdução
+**Introdução**
 Um eletrocardiograma é a reprodução gráfica da atividade elétrica do coração registrada por eletrodos posicionados em 3 regiões do corpo tradicionalmente, sendo elas, pulso direito e esquerdo e o terceiro eletrodo na perna direita, esse sinal é filtrado e amplificado através de um eletrocardiógrafo.
 O coração é uma bomba hidráulica ativada por estímulos elétricos com 4 cavidades e que a cada movimento, realiza uma alteração no fluxo sanguíneo. A contração das fibras musculares do coração é controlada por uma descarga elétrica que flui através de vias elétricas do sistema de condução, em uma velocidade controlada. 
 A frequência cardíaca gira em torno de 60 a 100 batimentos por minuto. O que no sistema Internacional de Unidades corresponde entre 1Hz a 1,67Hz. 
 
+**Desenvolvimento**
+Para o desenvolvimento do projeto foi analisado alguns pontos e seguido alguns passos importantes descreitos a seguir.
 Na figura a seguir observamos três larguras de banda, a clinica vai de 0.05 a 100 Hz e a de monitoramento 0.5 Hz a 50 Hz, também observamos a frequência cardíaca centrada em 17 Hz (TOMPKINS, 1995).
 
 ![alt text](https://github.com/Everton-LF-Santos/Projeto-Integrador-3-2018-1/blob/Eletrocardiografia-ECG/im1.png)
@@ -28,19 +30,20 @@ Na imagem abaixo é possível ver a topologia dos filtros com os valores calculado
 Ao ser implementado o fitro apresentou o comportamento da imagem a seguir.
 
 ![alt text](https://github.com/Everton-LF-Santos/Projeto-Integrador-3-2018-1/blob/Eletrocardiografia-ECG/Magnitude_log_Filtro.png)
- 
-Após a impementação do filtro foi feito o circuito amplificador com acionamento na perna direita, o circuito utilizado é o mesmo que esta disponibilizado no datashet do INA118, amplificador de instrumentação.
+
+Após a impementação do filtro, também foi feito algumas melhorias e adaptações como o acrescimo de um circuito para o offset, e em seguida o circuito amplificador com acionamento na perna direita, o circuito utilizado é o mesmo que esta disponibilizado no datashet do INA118, amplificador de instrumentação.
 
 ![alt text](https://github.com/Everton-LF-Santos/Projeto-Integrador-3-2018-1/blob/Eletrocardiografia-ECG/circuito_ina.jpg)
 
-COMENTAR
+Este circuito foi implementado e utilizado para adquirir o sinal antes do circuito de filtros, o sinal adquirido ja filtrado é mostrado na tela de um osciloscópio na figura a seguir.
 
 ![alt text](https://github.com/Everton-LF-Santos/Projeto-Integrador-3-2018-1/blob/Eletrocardiografia-ECG/Screenshot.png)
+
+Com o auxilio de um Atemega328p e um módulo bluetooth o sinal foi enviado para tela do computador e mostrado através do software *SerialPlot*.
 ![alt text](https://github.com/Everton-LF-Santos/Projeto-Integrador-3-2018-1/blob/Eletrocardiografia-ECG/pi3.png)
 ![alt text](https://github.com/Everton-LF-Santos/Projeto-Integrador-3-2018-1/blob/Eletrocardiografia-ECG/pi3_2.png)
 
-
-Referências
+**Referências**
 TOMPKINS, W. J. Biomedical Digital Signal Processing. Upper Saddle River, New Jersey: Prentice Hall, 1995.
 
 Por: Bruna Martini e Maria Negri
