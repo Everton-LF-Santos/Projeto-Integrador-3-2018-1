@@ -62,11 +62,11 @@
   
 ![Figura 7 - Blocos de hardware](https://github.com/Everton-LF-Santos/Projeto-Integrador-3-2018-1/blob/Eletroneuromiografia-ENMG/images/blocus.png "Blocos de hardware")
 
-![Figura 8 - layout](https://github.com/Everton-LF-Santos/Projeto-Integrador-3-2018-1/tree/Eletroneuromiografia-ENMG/prototipo_e_testes/layout.png "Blocos de hardware")
+![Figura 8 - layout](https://github.com/Everton-LF-Santos/Projeto-Integrador-3-2018-1/tree/Eletroneuromiografia-ENMG/prototipo_e_testes/layout.png "layout")
 
-![Figura 9 - silk screen](https://github.com/Everton-LF-Santos/Projeto-Integrador-3-2018-1/tree/Eletroneuromiografia-ENMG/prototipo_e_testes/silk screen.png "Blocos de hardware")
+![Figura 9 - silk screen](https://github.com/Everton-LF-Santos/Projeto-Integrador-3-2018-1/tree/Eletroneuromiografia-ENMG/prototipo_e_testes/silk_screen.png "silk screen")
 
-![Figura 10 - soldas SMD](https://github.com/Everton-LF-Santos/Projeto-Integrador-3-2018-1/tree/Eletroneuromiografia-ENMG/prototipo_e_testes/solda_down.jpg "Blocos de hardware")
+![Figura 10 - soldas SMD](https://github.com/Everton-LF-Santos/Projeto-Integrador-3-2018-1/tree/Eletroneuromiografia-ENMG/prototipo_e_testes/solda_down.jpg "soldas SMD")
   
 [Protótipo  e teste do hardware de aquisição](https://github.com/Everton-LF-Santos/Projeto-Integrador-3-2018-1/tree/Eletroneuromiografia-ENMG/prototipo_e_testes)
 
