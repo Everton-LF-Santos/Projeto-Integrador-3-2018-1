@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Atmel Studio Solution File, Format Version 11.00
+Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "emc_firmware_v1", "emc_firmware_v1\emc_firmware_v1.cproj", "{79CE6615-EEF3-4C10-9BB4-D6B747B44696}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|AVR = Debug|AVR
+		Release|AVR = Release|AVR
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{79CE6615-EEF3-4C10-9BB4-D6B747B44696}.Debug|AVR.ActiveCfg = Debug|AVR
+		{79CE6615-EEF3-4C10-9BB4-D6B747B44696}.Debug|AVR.Build.0 = Debug|AVR
+		{79CE6615-EEF3-4C10-9BB4-D6B747B44696}.Release|AVR.ActiveCfg = Release|AVR
+		{79CE6615-EEF3-4C10-9BB4-D6B747B44696}.Release|AVR.Build.0 = Release|AVR
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
