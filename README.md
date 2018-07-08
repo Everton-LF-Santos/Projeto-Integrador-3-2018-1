@@ -9,7 +9,7 @@
 
 <h2> Diagrama de blocos </h2>
 
-![Figura 1 - Diagrama de blocos do projeto](https://github.com/Everton-LF-Santos/Projeto-Integrador-3-2018-1/blob/Eletroneuromiografia-ENMG/images/diagrama_certo.jpg "Diagrama de Blocos")
+![Figura 1 - Diagrama de blocos do projeto](https://github.com/Everton-LF-Santos/Projeto-Integrador-3-2018-1/blob/Eletroneuromiografia-ENMG/images/diagrama_certo.png "Diagrama de Blocos")
 
 <p> Com a leitura das referências bilbiográficas da área feita e o diagrama de blocos definido, iniciou-se o desenvolvimento do projeto com o circuito de pré-amplificação. Foi encontrada no livro The Biomedical Engineering Book, uma topologia que junta o pré-amplificador e o filtro passa-alta no mesmo circuito. No exemplo da topologia, coincidentemente foi usado o INA118, mesmo amplificador de instrumentação disponível para o projeto. Na imagem a seguir, temos o esquemático simplificado e definição do ganho do componente.<p>
   
