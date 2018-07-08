@@ -146,26 +146,17 @@ void reconnect() {
 //-----------------------------------------------------------------------
 
 float V_total(float dist_F, float v_maximo, float dist_minima){
-
   float delta_D = (dist_F - dist_minima);
-  //Serial.println("Distancia medida :");
-  //Serial.println(dist_F);
-  //Serial.println("Delta D :");
-  //Serial.println(delta_D);
-  
-  //return (v_maximo - 1.1974 *pow(delta_D,(0.7992)));    // Aproximação curva potencial
   return(v_maximo - 0.7427 * delta_D + 0.5884) ;  // Aproximação linear
 }
 
 //-----------------------------------------------------------------------
 void sendMQTT(String titulo, float dado){
       char attributes[100];
-      String payload = "{\"";
-      
+      String payload = "{\"";      
       payload += titulo;
       payload += "\":"; payload += dado; payload += "}";
       payload.toCharArray(attributes, 100);
       client.publish("v1/devices/me/telemetry", attributes);
-      Serial.println(attributes);
 }
 
