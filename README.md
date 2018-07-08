@@ -38,7 +38,7 @@
   
 <p> Com os quatro bloco de hardware de aquisição prontos, foi feito um protótipo para validar o funcionamento dos circuitos escolhidos. O esquemático e layout elaborados no software Altium Designer foram feitos em blocos, para garantir a validação individual de cada um, antes do teste coletivo. É possível acoplar os blocos por meio de jumpers. Após confeccionada a placa, foram feitos os testes pertinentes. Os resultados estão na apresentação de slides do link a seguir. Os outros arquivos relacionados à etapa de prototipagem e testes também podem ser encontrados no link.
   
-[Protótipo  e teste do hardware de aquisição](https://github.com/Everton-LF-Santos/Projeto-Integrador-3-2018-1/tree/Eletroneuromiografia-ENMG/ajuste_ganho)
+[Protótipo  e teste do hardware de aquisição](https://github.com/Everton-LF-Santos/Projeto-Integrador-3-2018-1/tree/Eletroneuromiografia-ENMG/prototipo_e_testes)
 
 Com os resultados dos testes, foi concluído que os blocos do hardware de aquisição estavam de acordo com os requisitos necessários, porém para próxima etapa (teste IN VIVO), seria necessário que o circuito fosse alimentado de forma independente da rede elétrica. Assim, foi desenvolvida uma placa de regulação de tensão para alimentar o prototipo a partir de baterias 9 V. Os arquivos do projeto estão disponiveis no link a seguir.
 
