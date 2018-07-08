@@ -1,0 +1,382 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?application progid="SMath Studio Desktop" version="0.98.6179.21440"?>
+<regions>
+  <settings>
+    <identity>
+      <id>c0da38b5-4b7e-4a66-bb2a-9543cf8fa225</id>
+      <revision>3</revision>
+    </identity>
+    <calculation>
+      <precision>4</precision>
+      <exponentialThreshold>5</exponentialThreshold>
+      <fractions>decimal</fractions>
+    </calculation>
+    <pageModel active="true" printAreas="true" simpleEqualsOnly="false" printBackgroundImages="true">
+      <paper id="1" orientation="Portrait" width="850" height="1100" />
+      <margins left="39" right="39" top="39" bottom="39" />
+      <header alignment="Center" color="#a9a9a9">&amp;[DATE] &amp;[TIME] - &amp;[FILENAME]</header>
+      <footer alignment="Center" color="#a9a9a9">&amp;[PAGENUM] / &amp;[COUNT]</footer>
+      <backgrounds />
+    </pageModel>
+    <dependencies>
+      <assembly name="SMath Studio Desktop" version="0.98.6179.21440" guid="a37cba83-b69c-4c71-9992-55ff666763bd" />
+      <assembly name="Math Region" version="0.98.6179.21440" guid="02f1ab51-215b-466e-a74d-5d8b1cf85e8d" />
+      <assembly name="Text Region" version="1.10.6179.21446" guid="485d28c5-349a-48b6-93be-12a35a1c1e39" />
+    </dependencies>
+  </settings>
+  <region id="0" left="180" top="18" width="411" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+    <text lang="por">
+      <p>CÁLCULOS DO BLOCO DE SOMADOR DC E AJUSTE DE GANHO</p>
+    </text>
+  </region>
+  <region id="1" left="153" top="72" width="132" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+    <math>
+      <input>
+        <e type="operand">Vin_min</e>
+        <e type="operand">250</e>
+        <e type="operand" style="unit">μV</e>
+        <e type="operator" args="2">*</e>
+        <e type="operator" args="2">:</e>
+      </input>
+    </math>
+  </region>
+  <region id="2" left="342" top="72" width="115" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+    <math>
+      <input>
+        <e type="operand">Vin_max</e>
+        <e type="operand">5</e>
+        <e type="operand" style="unit">mV</e>
+        <e type="operator" args="2">*</e>
+        <e type="operator" args="2">:</e>
+      </input>
+    </math>
+  </region>
+  <region id="3" left="513" top="72" width="99" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+    <math>
+      <input>
+        <e type="operand">Vout</e>
+        <e type="operand">3.3</e>
+        <e type="operand" style="unit">V</e>
+        <e type="operator" args="2">*</e>
+        <e type="operator" args="2">:</e>
+      </input>
+    </math>
+  </region>
+  <region id="4" left="36" top="126" width="175" height="24" border="true" color="#000000" bgColor="#8080c0" fontSize="10">
+    <text lang="por">
+      <p>Ganhos da estrutura:</p>
+    </text>
+  </region>
+  <region id="5" left="432" top="126" width="322" height="24" border="true" color="#000000" bgColor="#8080c0" fontSize="10">
+    <text lang="por">
+      <p>Tensão de referência do bloco somador:</p>
+    </text>
+  </region>
+  <region id="6" left="432" top="144" width="169" height="41" color="#000000" bgColor="#ffffff" fontSize="10">
+    <math>
+      <input>
+        <e type="operand">Vref</e>
+        <e type="operand">Vout</e>
+        <e type="operand">2</e>
+        <e type="operator" args="2">/</e>
+        <e type="operator" args="2">:</e>
+      </input>
+      <result action="numeric">
+        <e type="operand">1.65</e>
+        <e type="operand" style="unit">V</e>
+        <e type="operator" args="2">*</e>
+      </result>
+    </math>
+  </region>
+  <region id="7" left="36" top="153" width="142" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+    <math>
+      <input>
+        <e type="operand">Ganho_Preamp</e>
+        <e type="operand">51</e>
+        <e type="operator" args="2">:</e>
+      </input>
+    </math>
+  </region>
+  <region id="8" left="36" top="171" width="126" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+    <math>
+      <input>
+        <e type="operand">Ganho_PB</e>
+        <e type="operand">12.5</e>
+        <e type="operator" args="2">:</e>
+      </input>
+    </math>
+  </region>
+  <region id="9" left="36" top="189" width="356" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+    <math>
+      <input>
+        <e type="operand">Ganho_serie</e>
+        <e type="operand">Ganho_PB</e>
+        <e type="operand">Ganho_Preamp</e>
+        <e type="operator" args="2">*</e>
+        <e type="operator" args="2">:</e>
+      </input>
+      <result action="numeric">
+        <e type="operand">637.5</e>
+      </result>
+    </math>
+  </region>
+  <region id="10" left="36" top="261" width="420" height="24" border="true" color="#000000" bgColor="#8080c0" fontSize="10">
+    <text lang="por">
+      <p>Faixas de amplitude na entrada do bloco de ajuste:</p>
+    </text>
+  </region>
+  <region id="11" left="36" top="279" width="362" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+    <math>
+      <input>
+        <e type="operand">Vin_adj_min</e>
+        <e type="operand">Vin_min</e>
+        <e type="operand">Ganho_serie</e>
+        <e type="operator" args="2">*</e>
+        <e type="operator" args="2">:</e>
+      </input>
+      <result action="numeric">
+        <e type="operand">0.1594</e>
+        <e type="operand" style="unit">V</e>
+        <e type="operator" args="2">*</e>
+      </result>
+    </math>
+  </region>
+  <region id="12" left="36" top="297" width="362" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+    <math>
+      <input>
+        <e type="operand">Vin_adj_max</e>
+        <e type="operand">Vin_max</e>
+        <e type="operand">Ganho_serie</e>
+        <e type="operator" args="2">*</e>
+        <e type="operator" args="2">:</e>
+      </input>
+      <result action="numeric">
+        <e type="operand">3.1875</e>
+        <e type="operand" style="unit">V</e>
+        <e type="operator" args="2">*</e>
+      </result>
+    </math>
+  </region>
+  <region id="13" left="36" top="351" width="299" height="24" border="true" color="#000000" bgColor="#8080c0" fontSize="10">
+    <text lang="por">
+      <p>Equacionamento do bloco somador DC:</p>
+    </text>
+  </region>
+  <region id="14" left="36" top="369" width="261" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+    <math>
+      <input>
+        <e type="operand">Vout_somaDC</e>
+        <e type="operand">2</e>
+        <e type="operand">Vin_somaDC</e>
+        <e type="operator" args="2">*</e>
+        <e type="operand">Vref</e>
+        <e type="operator" args="2">+</e>
+        <e type="operator" args="2">:</e>
+      </input>
+    </math>
+  </region>
+  <region id="15" left="36" top="423" width="559" height="24" border="true" color="#000000" bgColor="#8080c0" fontSize="10">
+    <text lang="por">
+      <p>Tensões de entrada e saída admissíveis no bloco de ajuste de ganho:</p>
+    </text>
+  </region>
+  <region id="16" left="36" top="441" width="277" height="41" color="#000000" bgColor="#ffffff" fontSize="10">
+    <math>
+      <input>
+        <e type="operand">Vin_somaDC_min</e>
+        <e type="operand">Vref</e>
+        <e type="operator" args="1">-</e>
+        <e type="operand">2</e>
+        <e type="operator" args="2">/</e>
+        <e type="operator" args="2">:</e>
+      </input>
+      <result action="numeric">
+        <e type="operand">0.825</e>
+        <e type="operand" style="unit">V</e>
+        <e type="operator" args="2">*</e>
+        <e type="operator" args="1">-</e>
+      </result>
+    </math>
+  </region>
+  <region id="17" left="378" top="450" width="241" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+    <math>
+      <input>
+        <e type="operand">Vout_adj_min</e>
+        <e type="operand">Vin_somaDC_min</e>
+        <e type="operator" args="2">:</e>
+      </input>
+    </math>
+  </region>
+  <region id="18" left="36" top="504" width="311" height="41" color="#000000" bgColor="#ffffff" fontSize="10">
+    <math>
+      <input>
+        <e type="operand">Vin_somaDC_max</e>
+        <e type="operand">3.3</e>
+        <e type="operand" style="unit">V</e>
+        <e type="operator" args="2">*</e>
+        <e type="operand">Vref</e>
+        <e type="operator" args="2">-</e>
+        <e type="operand">2</e>
+        <e type="operator" args="2">/</e>
+        <e type="operator" args="2">:</e>
+      </input>
+      <result action="numeric">
+        <e type="operand">0.825</e>
+        <e type="operand" style="unit">V</e>
+        <e type="operator" args="2">*</e>
+      </result>
+    </math>
+  </region>
+  <region id="19" left="378" top="513" width="241" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+    <math>
+      <input>
+        <e type="operand">Vout_adj_max</e>
+        <e type="operand">Vin_somaDC_max</e>
+        <e type="operator" args="2">:</e>
+      </input>
+    </math>
+  </region>
+  <region id="20" left="36" top="576" width="314" height="24" border="true" color="#000000" bgColor="#8080c0" fontSize="10">
+    <text lang="por">
+      <p>Variação de ganho no bloco de ajuste:</p>
+    </text>
+  </region>
+  <region id="21" left="36" top="594" width="278" height="41" color="#000000" bgColor="#ffffff" fontSize="10">
+    <math>
+      <input>
+        <e type="operand">G_adj_max</e>
+        <e type="operand">Vout_adj_max</e>
+        <e type="operand">Vin_adj_max</e>
+        <e type="operator" args="2">/</e>
+        <e type="operator" args="2">:</e>
+      </input>
+      <result action="numeric">
+        <e type="operand">0.2588</e>
+      </result>
+    </math>
+  </region>
+  <region id="22" left="396" top="594" width="284" height="43" color="#000000" bgColor="#ffffff" fontSize="10">
+    <math>
+      <input>
+        <e type="operand">G_adj_min</e>
+        <e type="operand">Vout_adj_min</e>
+        <e type="operand">Vin_adj_min</e>
+        <e type="operator" args="2">/</e>
+        <e type="function" preserve="true" args="1">abs</e>
+        <e type="operator" args="2">:</e>
+      </input>
+      <result action="numeric">
+        <e type="operand">5.1765</e>
+      </result>
+    </math>
+  </region>
+  <region id="23" left="45" top="657" width="210" height="24" border="true" color="#000000" bgColor="#8080c0" fontSize="10">
+    <text lang="por">
+      <p>Cálculo dos componentes:</p>
+    </text>
+  </region>
+  <region id="24" left="72" top="675" width="55" height="41" color="#000000" bgColor="#ffffff" fontSize="10">
+    <math>
+      <input>
+        <e type="operand">G</e>
+        <e type="operand">Rf</e>
+        <e type="operand">Ri</e>
+        <e type="operator" args="2">/</e>
+        <e type="operator" args="2">:</e>
+      </input>
+    </math>
+  </region>
+  <region id="25" left="36" top="684" width="28" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+    <math>
+      <input>
+        <e type="operand">se</e>
+      </input>
+    </math>
+  </region>
+  <region id="26" left="135" top="684" width="94" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+    <text lang="por">
+      <p>então para</p>
+    </text>
+  </region>
+  <region id="27" left="243" top="684" width="90" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+    <math>
+      <input>
+        <e type="operand">Ri</e>
+        <e type="operand">220</e>
+        <e type="operand" style="unit">kΩ</e>
+        <e type="operator" args="2">*</e>
+        <e type="operator" args="2">:</e>
+      </input>
+    </math>
+  </region>
+  <region id="28" left="117" top="738" width="296" height="33" color="#000000" bgColor="#ffffff" fontSize="10">
+    <math>
+      <input>
+        <e type="operand">Rf_min</e>
+        <e type="operand">Ri</e>
+        <e type="operand">G_adj_min</e>
+        <e type="operator" args="2">*</e>
+        <e type="operator" args="2">:</e>
+      </input>
+      <result action="numeric">
+        <e type="operand">1.1388</e>
+        <e type="operand">10</e>
+        <e type="operand">6</e>
+        <e type="operator" args="2">^</e>
+        <e type="operator" args="2">*</e>
+        <e type="operand" style="unit">Ω</e>
+        <e type="operator" args="2">*</e>
+      </result>
+    </math>
+  </region>
+  <region id="29" left="522" top="747" width="81" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+    <math>
+      <input>
+        <e type="operand">Rf</e>
+        <e type="operand">56</e>
+        <e type="operand" style="unit">kΩ</e>
+        <e type="operator" args="2">*</e>
+        <e type="operator" args="2">:</e>
+      </input>
+    </math>
+  </region>
+  <region id="30" left="45" top="756" width="53" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+    <math>
+      <input>
+        <e type="operand">temos</e>
+      </input>
+    </math>
+  </region>
+  <region id="31" left="423" top="765" width="69" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+    <text lang="por">
+      <p>ou seja</p>
+    </text>
+  </region>
+  <region id="32" left="117" top="774" width="294" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+    <math>
+      <input>
+        <e type="operand">Rf_max</e>
+        <e type="operand">Ri</e>
+        <e type="operand">G_adj_max</e>
+        <e type="operator" args="2">*</e>
+        <e type="operator" args="2">:</e>
+      </input>
+      <result action="numeric">
+        <e type="operand">56941.1765</e>
+        <e type="operand" style="unit">Ω</e>
+        <e type="operator" args="2">*</e>
+      </result>
+    </math>
+  </region>
+  <region id="33" left="522" top="774" width="90" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+    <math>
+      <input>
+        <e type="operand">Radj</e>
+        <e type="operand">1</e>
+        <e type="operand" style="unit">MΩ</e>
+        <e type="operator" args="2">*</e>
+        <e type="operator" args="2">:</e>
+      </input>
+    </math>
+  </region>
+</regions>
