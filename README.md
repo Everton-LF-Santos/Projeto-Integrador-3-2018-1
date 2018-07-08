@@ -39,3 +39,15 @@
 <p> Com os quatro bloco de hardware de aquisição prontos, foi feito um protótipo para validar o funcionamento dos circuitos escolhidos. O esquemático e layout elaborados no software Altium Designer foram feitos em blocos, para garantir a validação individual de cada um, antes do teste coletivo. É possível acoplar os blocos por meio de jumpers. Após confeccionada a placa, foram feitos os testes pertinentes. Os resultados estão na apresentação de slides do link a seguir. Os outros arquivos relacionados à etapa de prototipagem e testes também podem ser encontrados no link.
   
 [Protótipo  e teste do hardware de aquisição](https://github.com/Everton-LF-Santos/Projeto-Integrador-3-2018-1/tree/Eletroneuromiografia-ENMG/ajuste_ganho)
+
+Com os resultados dos testes, foi concluído que os blocos do hardware de aquisição estavam de acordo com os requisitos necessários, porém para próxima etapa (teste IN VIVO), seria necessário que o circuito fosse alimentado de forma independente da rede elétrica. Assim, foi desenvolvida uma placa de regulação de tensão para alimentar o prototipo apartir de baterias 9 V. Os arquivos do projeto estão disponiveis no link a seguir.
+
+[Placa de regulação de tensão](https://github.com/Everton-LF-Santos/Projeto-Integrador-3-2018-1/tree/Eletroneuromiografia-ENMG/reg_tensao)
+
+Com a alimentação regulada das baterias e sem interferência conduzida da rede elétrica, foi feito o teste In Vivo do hardware de aquisição. Usando eletrodos de Prata/Cloreto de Prata com gel condutor e cabos blindados, foi feita leitura do sinal da musculatura do antebraço esquerdo. O sinal foi observado por meio do osciloscópio portátil Rohde & Schwarz modelo RTH1004. Os arquivos relacionados a etapa de teste in vivo pode ser acessados pelo link a seguir.
+
+[Teste In Vivo](https://github.com/Everton-LF-Santos/Projeto-Integrador-3-2018-1/tree/Eletroneuromiografia-ENMG/teste_vivo)
+
+Por fim, foi iniciada a etapa de conversão analógica-digital transmissão dos dados, por meio do uso de um microcontrolador. Foi escolhido o chip ATMEGA328P pela familiarização anterior. O código desenvolvido faz a conversão do sinal analógico em digital e envia o dado por meio do módulo Bluetooth HC-06. Para fins de facilitação de código, foi usada resolução de 8 bits na conversão A/D, com taxa de amostragem de 1 kHz. O uso de transmissão de dados sem fio é para garantir o isolamento galvânico do circuito de aquisição de qualquer outro equipamento eletrônico. Para visualização dos dados foi usado o software SerialPlot. Os arquivos relacionados a etapa de desenvolvimento do firmware, aquisição e visualização dos dados podem ser acessados no link a seguir.
+
+[Teste In Vivo](https://github.com/Everton-LF-Santos/Projeto-Integrador-3-2018-1/tree/Eletroneuromiografia-ENMG/firmware_bt)
