@@ -13,7 +13,7 @@
 
 <p> Com a leitura das referências bilbiográficas da área feita e o diagrama de blocos definido, iniciou-se o desenvolvimento do projeto com o circuito de pré-amplificação. Foi encontrada no livro The Biomedical Engineering Book, uma topologia que junta o pré-amplificador e o filtro passa-alta no mesmo circuito. No exemplo da topologia, coincidentemente foi usado o INA118, mesmo amplificador de instrumentação disponível para o projeto. Na imagem a seguir, temos o esquemático simplificado e definição do ganho do componente.<p>
   
- ![Figura 1 - Diagrama de blocos do projeto](https://github.com/Everton-LF-Santos/Projeto-Integrador-3-2018-1/blob/Eletroneuromiografia-ENMG/images/ina118_ss_ganho.jpg "Esquemático simples e ganho INA118")
+ ![Figura 1 - Diagrama de blocos do projeto](https://github.com/Everton-LF-Santos/Projeto-Integrador-3-2018-1/blob/Eletroneuromiografia-ENMG/images/ina118_ss_ganho.png "Esquemático simples e ganho INA118")
   
 <p>Foi arbitrado um ganho de 51 para a estrutura, por resultar em um valor de 1kohm para Rg, fácil de obter, e por ser um valor na faixa aceitável de ganho para esse tipo de estrutura neste tipo de aplicação. segundo a bibliografia estudada.<p>
   
