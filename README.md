@@ -6,6 +6,10 @@
 <h2> Revisão Bibliográfica </h2>
 
 <p> A revisão bibliográfica pode ser acessada na wiki deste projeto.</p>
+<p> A seguir, links de uma apresentação e um relatório técnico elaborados para outra disciplina, mas em cima do mesmo projeto, que podem ajudar na compreensão.<p>
+
+[Apresentação - EMG](https://github.com/Everton-LF-Santos/Projeto-Integrador-3-2018-1/blob/Eletroneuromiografia-ENMG/prototipo_e_testes/Apresenta%C3%A7%C3%A3o%20PI3%20-%20COm.pdf)
+[Relatório Técnico -EMG](https://docs.google.com/document/d/1B7dxLtk4YTgo0cG7-Vo4bE_Du3ThqNgDaQOGe45rIPg/edit)
 
 <h2> Diagrama de blocos </h2>
 
