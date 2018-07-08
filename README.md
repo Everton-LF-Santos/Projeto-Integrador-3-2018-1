@@ -61,9 +61,9 @@
 <p> Com os quatro bloco de hardware de aquisição prontos, foi feito um protótipo para validar o funcionamento dos circuitos escolhidos. O esquemático e layout elaborados no software Altium Designer foram feitos em blocos, para garantir a validação individual de cada um, antes do teste coletivo. É possível acoplar os blocos por meio de jumpers. Após confeccionada a placa, foram feitos os testes pertinentes. Os resultados estão na apresentação de slides do link a seguir. Os outros arquivos relacionados à etapa de prototipagem e testes também podem ser encontrados no link.
   
 ![Figura 7 - Blocos de hardware](https://github.com/Everton-LF-Santos/Projeto-Integrador-3-2018-1/blob/Eletroneuromiografia-ENMG/images/blocus.png "Blocos de hardware")
-![Figura 8 - layout](https://github.com/Everton-LF-Santos/Projeto-Integrador-3-2018-1/blob/Eletroneuromiografia-ENMG/images/layout.png "Blocos de hardware")
-![Figura 9 - silk screen](https://github.com/Everton-LF-Santos/Projeto-Integrador-3-2018-1/blob/Eletroneuromiografia-ENMG/images/silk-screen.png "Blocos de hardware")
-![Figura 10 - soldas SMD](https://github.com/Everton-LF-Santos/Projeto-Integrador-3-2018-1/blob/Eletroneuromiografia-ENMG/images/solda_down.png "Blocos de hardware")
+![Figura 8 - layout](https://github.com/Everton-LF-Santos/Projeto-Integrador-3-2018-1/tree/Eletroneuromiografia-ENMG/prototipo_e_testes/layout.png "Blocos de hardware")
+![Figura 9 - silk screen](https://github.com/Everton-LF-Santos/Projeto-Integrador-3-2018-1/tree/Eletroneuromiografia-ENMG/prototipo_e_testes/silk-screen.png "Blocos de hardware")
+![Figura 10 - soldas SMD](https://github.com/Everton-LF-Santos/Projeto-Integrador-3-2018-1/tree/Eletroneuromiografia-ENMG/prototipo_e_testes/solda_down.png "Blocos de hardware")
   
 [Protótipo  e teste do hardware de aquisição](https://github.com/Everton-LF-Santos/Projeto-Integrador-3-2018-1/tree/Eletroneuromiografia-ENMG/prototipo_e_testes)
 
