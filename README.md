@@ -47,6 +47,7 @@ Um colega se dispôs a ser voluntário para teste dos circuitos. O resultado obtid
 
 ![alt text](https://github.com/Everton-LF-Santos/Projeto-Integrador-3-2018-1/blob/Eletrocardiografia-ECG/Screenshot.png)
 
+É interessante salientar que apesar do circuito não estar ligado a rede a mesma cria muito ruído ao circuito. Para um sinal mais limpo foi necessário desligar as bancadas de energia e a luz do ambiente.
 Utilizou-se o formato AC para a captura deste sinal com o intuito de melhor visualização do mesmo. Porém ele possui um offset de 1.5V para que o microcontrolador possa receber seu sinal sem danifica-lo.
 
 Com o auxilio de um Atemega328p e um módulo bluetooth o sinal foi enviado para tela do computador e mostrado através do software *SerialPlot*.
