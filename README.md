@@ -8,7 +8,7 @@ A frequência cardíaca gira em torno de 60 a 100 batimentos por minuto. O que no 
 
 **Desenvolvimento**
 
-Para o desenvolvimento do projeto foi analisado alguns pontos e seguido alguns passos importantes descreitos a seguir.
+Para o desenvolvimento do projeto foi analisado alguns pontos e seguido alguns passos importantes descritos a seguir.
 Na figura a seguir observamos três larguras de banda, a clinica vai de 0.05 a 100 Hz e a de monitoramento 0.5 Hz a 50 Hz, também observamos a frequência cardíaca centrada em 17 Hz (TOMPKINS, 1995).
 
 ![alt text](https://github.com/Everton-LF-Santos/Projeto-Integrador-3-2018-1/blob/Eletrocardiografia-ECG/im1.png)
@@ -33,19 +33,27 @@ Ao ser implementado o fitro apresentou o comportamento da imagem a seguir.
 
 ![alt text](https://github.com/Everton-LF-Santos/Projeto-Integrador-3-2018-1/blob/Eletrocardiografia-ECG/Magnitude_log_Filtro.png)
 
-Após a impementação do filtro, também foi feito algumas melhorias e adaptações como o acrescimo de um circuito para o offset, e em seguida o circuito amplificador com acionamento na perna direita, o circuito utilizado é o mesmo que esta disponibilizado no datashet do INA118, amplificador de instrumentação.
+Após a impementação do filtro, também foi feito algumas melhorias e adaptações como o acrescimo de um circuito para o offset, e em seguida o circuito amplificador com acionamento na perna direita, o circuito utilizado é o mesmo que esta disponibilizado no datashet do INA118, amplificador de instrumentação. O ganho do INA118 é dado de acordo com a fórmula dada abaixo.
 
 ![alt text](https://github.com/Everton-LF-Santos/Projeto-Integrador-3-2018-1/blob/Eletrocardiografia-ECG/circuito_ina.jpg)
 
-Este circuito foi implementado e utilizado para adquirir o sinal antes do circuito de filtros, o sinal adquirido ja filtrado é mostrado na tela de um osciloscópio na figura a seguir.
+Este circuito foi implementado para uma aquisição do sinal com pouco ruído. Como o sinal é muito baixo e há muitas fontes de ruídos utilizou-se o filtro passa faixa descrito. O layout da placa de captação do sinal e o layout da placa de filtros pode ser visto abaixo.
+
+![alt text](https://github.com/Everton-LF-Santos/Projeto-Integrador-3-2018-1/blob/Eletrocardiografia-ECG/filtros.png)
+
+![alt text](https://github.com/Everton-LF-Santos/Projeto-Integrador-3-2018-1/blob/Eletrocardiografia-ECG/ina118.png)
+
+Um colega se dispôs a ser voluntário para teste dos circuitos. O resultado obtido pode ser visto abaixo. 
 
 ![alt text](https://github.com/Everton-LF-Santos/Projeto-Integrador-3-2018-1/blob/Eletrocardiografia-ECG/Screenshot.png)
+
+Utilizou-se o formato AC para a captura deste sinal com o intuito de melhor visualização do mesmo. Porém ele possui um offset de 1.5V para que o microcontrolador possa receber seu sinal sem danifica-lo.
 
 Com o auxilio de um Atemega328p e um módulo bluetooth o sinal foi enviado para tela do computador e mostrado através do software *SerialPlot*.
 
 ![alt text](https://github.com/Everton-LF-Santos/Projeto-Integrador-3-2018-1/blob/Eletrocardiografia-ECG/pi3.png)
 
-O sinal apresentou tempos muitos distantes entre as amostras, então decidiu-se por alterar o código afim de melhorar o sinal, porém o que se pode perceber é que o sinal contínua muito parecido com o anterior, chegando a conclusão que o computador utilizado não acompanhava o "ritmo" em que as amostras estavam sendo adquiridas.
+O sinal apresentou frequência de amostragem pequena para uma boa discretização do sinal. Com o intuito de deixar o sinal mais suave aumentou-se o número da frequência de amostragem no código, porém não ouve melhora significativa. Isso deve-se ao fato do bluetooth ser lento para receber as informações, deixando assim a saída com longos intervalos de tempo entre amostras.
 
 ![alt text](https://github.com/Everton-LF-Santos/Projeto-Integrador-3-2018-1/blob/Eletrocardiografia-ECG/pi3_2.png)
 
