@@ -87,7 +87,7 @@ https://a360.co/2Nurk7G
 
 <img src="https://github.com/Everton-LF-Santos/Projeto-Integrador-3-2018-1/blob/Uso-Sustent%C3%A1vel-%C3%81gua/Imagens/HC_STL.png?raw=true" width="380" height="220"/>
 
-Circuito Impresso:
+### Circuito Impresso:
 
 A ideia do circuito é que ele seja modular e possa ser replicado para uma expansibilidade do sistema, logo a PCB integra o NodeMCU com o circuito de alimentação e  um conversor lógico para o casamento de tensões o microcontrolador e os sensores.
 Sendo um circuito de baixo consumo pensado para facilidade de instalação, o mesmo pode ser alimentado por bateria ou fonte com tensões compatíveis com a entrada do regular StepDown LM2596.
@@ -97,6 +97,7 @@ O esquemático apresenta a interligação dos componentes:
 <img src="https://github.com/Everton-LF-Santos/Projeto-Integrador-3-2018-1/blob/Uso-Sustent%C3%A1vel-%C3%81gua/Imagens/Esquem%C3%A1tico.png?raw=true"/>
 
 Layout do circuito:
+
 <img src="https://github.com/Everton-LF-Santos/Projeto-Integrador-3-2018-1/blob/Uso-Sustent%C3%A1vel-%C3%81gua/Imagens/PCB_TopSilk.jpeg?raw=true"/>
 
 A máscara de corrosão está na pasta AltiumPCB.
