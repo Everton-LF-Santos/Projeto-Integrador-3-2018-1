@@ -18,3 +18,6 @@
 <p>Foi arbitrado um ganho de 51 para a estrutura, por resultar em um valor de 1kohm para Rg, fácil de obter, e por ser um valor na faixa aceitável de ganho para esse tipo de estrutura neste tipo de aplicação. segundo a bibliografia estudada.<p>
   
 <p>Todas as considerações feitas, os cálculos e simulações pertinentes foram executados. Os arquivos de ambas etapas citadas estão disponível no link.<p>
+
+[Calculos e Simulacoes - Pre_amp e PA](https://github.com/Everton-LF-Santos/Projeto-Integrador-3-2018-1/tree/Eletroneuromiografia-ENMG/pre_amp_e_passa_alta)
+
