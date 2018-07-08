@@ -146,7 +146,7 @@ O pacote de dados enviados deve ser em sintaxe Jason {"tópico",dado} para ser d
 O código completo está na pasta SRC.
 
 ### Gráficos na Plataforma IOT
-Abaixo encontram-se os gráficos obtidos na plataforma IOT. Apesar de usar uma versão de demonstração, é possível designar esse gráficos a um cliente ou deixá-los públicos. Porém na versão demo só é possível deixar 500 dados e os primeiro será deletado se surgir o 501, mesmo selecionando uma escala de tempo maior.
+Abaixo encontram-se os gráficos obtidos na plataforma IOT. Apesar de usar uma versão de demonstração, é possível designar esses gráficos a um cliente ou deixá-los públicos. Porém na versão demo só é possível deixar 500 dados e os primeiro será deletado se surgir o 501, mesmo selecionando uma escala de tempo maior.
 
 <img src="https://github.com/Everton-LF-Santos/Projeto-Integrador-3-2018-1/blob/Uso-Sustent%C3%A1vel-%C3%81gua/Imagens/Flow_teste.jpeg?raw=true"/>
 
@@ -170,7 +170,7 @@ Abaixo estão apresentadas as estimativas de custo do protótipo completo:
 | Componentes e PCB | R$ 7,00
 | Total | R$ 108,00
 
-*Partes especificas do protótipo como caixa plástica, torneira e encanamentos não foram inclusas neste orçamento.
+*Partes da estrutura como caixa plástica, torneira e encanamentos não foram inclusas neste orçamento pois não fazem parte do produto final.
 
 ### Documentação Auxiliar
 #### MQTT
