@@ -44,7 +44,7 @@
 <p> Tendo o ponto de partida e de chegada, podemos focar esforços na construção do caminho. Para termos um sinal totalmente positivo na saída, é necessário que seja feito um offset DC no sinal. Para isso, foi escolhida a topologia de amplificador operacional na configuração não-inversora. Os valores de resistência do circuito foram arbitrados para não ter influencia no casamento de impedância dos blocos. A tensão de referência deste circuito (que deve ser metade da excursão do sinal de saída, logo, 3.3/2 = 1,65 V) será provida por um seguidor de tensão. Como o seguidor inverte a polaridade da tensão, o valor de -1,65V necessário é pego de um divisor resistivo entre o GND e o -5V da alimentação simétrica dos ampops.
 <p> Tendo definido os parâmetros necessários, passaram-se para os demais cálculos e simulações do bloco de offset DC. Os arquivos relacionados a esta etapa podem ser encontrados no link.
   
-![Figura 5 - Circuito projetado](https://github.com/Everton-LF-Santos/Projeto-Integrador-3-2018-1/blob/Eletroneuromiografia-ENMG/images/real_oficial_somado_dc.png "Circuito projetado")
+![Figura 5 - Circuito projetado](https://github.com/Everton-LF-Santos/Projeto-Integrador-3-2018-1/blob/Eletroneuromiografia-ENMG/images/real_oficial_somador_dc.png "Circuito projetado")
   
 [Calculos e Simulacoes - Somador DC](https://github.com/Everton-LF-Santos/Projeto-Integrador-3-2018-1/tree/Eletroneuromiografia-ENMG/somadorDC)
 
