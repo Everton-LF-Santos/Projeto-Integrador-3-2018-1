@@ -1,6 +1,6 @@
 # Monitoramento de Nível e Vazamento de Água
 ## IFSC Campus Florianópolis
-### Projeto-Integrador-3-2018-1
+### Projeto Integrador 3 - 2018-1
 
 #### Equipe: Jhonatan Lang, Ian Dannapel
 
