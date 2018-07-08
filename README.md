@@ -76,4 +76,4 @@ Por fim, foi iniciada a etapa de conversão analógica-digital transmissão dos 
 
 <h2> Referências Bibliográficas </h2>
 
-[link para arquivos das referências bibliográficas]https://drive.google.com/drive/u/1/folders/12AXk9AZwwBUo14S7_4OgoAu70kQn8SUb?ogsrc=32)
+[link para arquivos das referências bibliográficas](https://drive.google.com/drive/u/1/folders/12AXk9AZwwBUo14S7_4OgoAu70kQn8SUb?ogsrc=32)
