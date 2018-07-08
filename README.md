@@ -61,13 +61,16 @@ Para imitar uma situação mais próxima da realidade, usou uma caixa plástica 
 Para medição de volume de água usou-se um copo medidor com resolução de 50mL.
 Estrutura:
 <img src="https://github.com/Everton-LF-Santos/Projeto-Integrador-3-2018-1/blob/Uso-Sustent%C3%A1vel-%C3%81gua/Imagens/Estrutura.jpeg?raw=true" width="440" height="330" />
+
 Suporte HCSR04:
 <img src="https://github.com/Everton-LF-Santos/Projeto-Integrador-3-2018-1/blob/Uso-Sustent%C3%A1vel-%C3%81gua/Imagens/SuporteHC.jpeg?raw=true" width="380" height="330" />
+
 <img src="https://github.com/Everton-LF-Santos/Projeto-Integrador-3-2018-1/blob/Uso-Sustent%C3%A1vel-%C3%81gua/Imagens/HC_STL.png?raw=true" width="380" height="220"/>
 
 
 Também foi elaborada uma placa de circuito impresso com todos componentes necessários para leitura dos sensores e comunicação Wifi/MQTT e alimentação por baterias 9V. O esquemático apresenta a interligação dos componentes:
 <img src="https://github.com/Everton-LF-Santos/Projeto-Integrador-3-2018-1/blob/Uso-Sustent%C3%A1vel-%C3%81gua/Imagens/Esquem%C3%A1tico.png?raw=true"/>
+
 A máscara de corrosão está na pasta AltiumPCB.
 PCB final:
 <img src="https://github.com/Everton-LF-Santos/Projeto-Integrador-3-2018-1/blob/Uso-Sustent%C3%A1vel-%C3%81gua/Imagens/PCB_final.jpeg?raw=true" />
@@ -76,16 +79,21 @@ PCB final:
 Para determinar de forma mais precisa o fluxo de água o sensor precisa ser calibrado, além disso sua frequência de pulsos não é diretamente proporcional.
 Neste ensaio procurou-se deixar um fluxo constante sobre o sensor repondo água na caixa, assim cronometrou-se o tempo e mediu-se o volume no copo medidor. Dessa maneira, contando os pulsos pode se determinar a razão de pulsos para cada fluxo A tabela obtida está na figura abaixo:
 <img src="https://github.com/Everton-LF-Santos/Projeto-Integrador-3-2018-1/blob/Uso-Sustent%C3%A1vel-%C3%81gua/Imagens/Ensaio%20Fluxo.png?raw=true" />
+
 Os pontos obtidos podem ser colocados em gráfico e aproximar por uma linha de tendência linear:
 <img src="https://github.com/Everton-LF-Santos/Projeto-Integrador-3-2018-1/blob/Uso-Sustent%C3%A1vel-%C3%81gua/Imagens/Ensaio%20Fluxo%20Grafico.png?raw=true" />
+
 O ensaio foi realizado do fluxo mínimo detectado pelo sensor ao fluxo máximo da estrutura simuladora.
 
 Com essa curva de aproximação pode-se agora contar os pulsos e calcular o fluxo pela reta. De fato, os testes de validação apontam erros razoáveis:
 <img src="https://github.com/Everton-LF-Santos/Projeto-Integrador-3-2018-1/blob/Uso-Sustent%C3%A1vel-%C3%81gua/Imagens/Ensaio%20Fluxo%20Validacao.png?raw=true" width="900" height="80"/>
 #### Ensaio Sensor de Altura
 O volume de um recipiente medido pela variação de altura depende exclusivamente do seu formato, esta razão pode ser definida empírica ou matematicamente. Neste ensaio optou-se pela maneira empírica devido a difícil aproximação matemática do recipiente. O resultado obtido está ilustrado na tabela abaixo:
+
 <img src="https://github.com/Everton-LF-Santos/Projeto-Integrador-3-2018-1/blob/Uso-Sustent%C3%A1vel-%C3%81gua/Imagens/EnsaioHC%20Tabela.png?raw=true"/>
+
 <img src="https://github.com/Everton-LF-Santos/Projeto-Integrador-3-2018-1/blob/Uso-Sustent%C3%A1vel-%C3%81gua/Imagens/EnsaioHC%20Graf.png?raw=true"/>
+
 Da mesma maneira que o sensor de fluxo, podemos aproximar a variação do volume pela reta obtida.
 #### Limitações técnicas
 A limitação técnica mais agravante deste protótipo é o fato do sensor de fluxo não detectar pequenos fluxos, impossibilitando a aplicação dele para este fim. 
