@@ -50,4 +50,4 @@ Com a alimentação regulada das baterias e sem interferência conduzida da rede
 
 Por fim, foi iniciada a etapa de conversão analógica-digital transmissão dos dados, por meio do uso de um microcontrolador. Foi escolhido o chip ATMEGA328P pela familiarização anterior. O código desenvolvido faz a conversão do sinal analógico em digital e envia o dado por meio do módulo Bluetooth HC-06. Para fins de facilitação de código, foi usada resolução de 8 bits na conversão A/D, com taxa de amostragem de 1 kHz. O uso de transmissão de dados sem fio é para garantir o isolamento galvânico do circuito de aquisição de qualquer outro equipamento eletrônico. Para visualização dos dados foi usado o software SerialPlot. Os arquivos relacionados a etapa de desenvolvimento do firmware, aquisição e visualização dos dados podem ser acessados no link a seguir.
 
-[Teste In Vivo](https://github.com/Everton-LF-Santos/Projeto-Integrador-3-2018-1/tree/Eletroneuromiografia-ENMG/firmware_bt)
+[Teste In Vivo com aquisição de dados via Bluetooth](https://github.com/Everton-LF-Santos/Projeto-Integrador-3-2018-1/tree/Eletroneuromiografia-ENMG/firmware_bt)
